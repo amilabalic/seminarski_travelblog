@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("imgs/uu.jpg");
+  background-size: auto;
+  background-size: cover;
+  background-color: rgba(231, 189, 189, 0.562);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+li,
+.home {
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 0px;
+  padding-left: 20px;
+}
+
+.logo:hover {
+  color: pink;
+  text-shadow: pink;
+}
+
+.navbar {
+  /* display: flex;*/
+  overflow: hidden;
+  background-color: transparent;
+  margin: auto;
+  padding: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  display: flex;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding-top: 0px;
+  padding-right: 20px;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: hsl(350, 53%, 76%);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  font-size: 18px;
+  color: white;
+  padding-top: 0px;
+  padding-right: 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: hsl(350, 53%, 76%);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.content h3 {
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 38px;
+}
+.content a {
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 20%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border: 0.8px solid white;
+  padding: 10px 10px 10px 10px;
+}
+
+.content a:hover {
+  color: hsl(350, 53%, 76%);
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 10px 10px 10px 10px;
+}
+
+.about-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.308);
+  border-radius: 6%;
+  margin: 15px;
+}
+
+.about-content p {
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+}
+.slider {
+  max-width: 850px;
+  border: 10px solid white;
+  margin: 92px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .left-slide,
+.slider .right-slide {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.842);
+  border-radius: 50%;
+  color: black;
+  font-size: 20px;
+  top: 50%;
+  cursor: pointer;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+}
+.slider .left-slide:hover,
+.slider .right-slide:hover {
+  box-shadow: 0px 0px 10px rgb(0,0,0);
+  color: rgb(156, 84, 96);
+}
+
+.slider .left-slide {
+  left: 30px;
+}
+.slider .right-slide {
+  right: 30px;
+}
+.slider .slider-items .item img {
+  max-width: 100%;
+  display: block;
+}
+
+.slider .slider-items .item {
+  display: none;
+  position: relative;
+}
+.slider .slider-items .item .caption {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.836);
+  line-height: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+.slider .slider-items .item.active {
+  display: block;
+}
+
+.santorini-content {
+  margin: auto;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.308);
+  border-radius: 6%;
+  padding: 10px;
+}
+
+.santorini-content h3 {
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 35px;
+}
+
+.santorini-content p {
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.santorini-content a {
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  border: 0.8px solid white;
+  padding: 10px 10px 10px 10px;
+  left: 375px;
+  position: relative;
+}
+
+.santorini-content a:hover {
+  color: white;
+  background-color: pink;
+  border-color: pink;
+}
+
+.contact {
+  position: relative;
+  min-height: 50vh;
+  margin: 80px auto;
+  /*padding: 50px 100px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content1 {
+  max-width: 700px;
+  text-align: center;
+}
+.contact .content1 h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+
+.contact .content1 p {
+  font-size: 20px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contantInfo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.774);
+}
+.container .contantInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contantInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  color: black;
+}
+
+.contactForm {
+  width: 30%;
+  padding: 40px;
+  background:white;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: rgb(206, 109, 126);
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .button button {
+  width: 100px;
+  border: 0.8px solid rgb(206, 109, 126);
+  color: rgb(206, 109, 126);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+.contactForm .button button {
+  background-color: transparent;
+  border: 0.8px solid rgb(206, 109, 126);
+  color: rgb(206, 109, 126);
+}
+.contactForm .button button:hover {
+  background-color: rgb(206, 109, 126);
+  border: 0.8px solid rgb(206, 109, 126);
+  color: white;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #d48592;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.fa {
+  color: rgb(206, 109, 126);
+}
+
+#searchbar {
+  border-radius: 10px;
+}
+
+.box input {
+  width: 170px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+.box input[type="text"]:focus {
+  box-shadow: 4px 4px rgba(255, 255, 255, 0.89);
+}
+#list {
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+}
+
+#list a {
+  float: none;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#list a:hover {
+  color: pink;
+}
+
+#list li {
+  list-style-type: none;
+  display: none;
+}
+
+.destination-list {
+  display: none;
+}

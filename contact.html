@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Travel Blog</a>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Destinations</button>
+          <div class="dropdown-content">
+            <br />
+            <a href="santorini.html">Santorini</a>
+            <br />
+            <a href="amsterdam.html">Amsterdam</a>
+            <br />
+            <a href="rovaniemi.html">Rovaniemi</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+       
+        </div>
+      </div>
+      <div class="box">
+        <input
+          id="searchbar"
+          onkeyup="search()"
+          type="text"
+          name="search"
+          placeholder="Search"
+        />
+
+        <ul id="list">
+          <br />
+          <li class="destination-list">
+            <a href="santorini.html">Santorini</a>
+          </li>
+          <br />
+          <li class="destination-list">
+            <a href="amsterdam.html">Amsterdam</a>
+          </li>
+          <br />
+          <li class="destination-list">
+            <a href="rovaniemi.html">Rovaniemi</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="contact">
+      <div class="content1">
+        <h2>Pišite nam svoja iskustva...</h2>
+        <br />
+        <p>
+          Ukoliko želite da baš Vaša destinacija bude na našem sljedećem postu,
+          javite nam se!
+        </p>
+      </div>
+      <div class="container">
+        <div class="contantInfo">
+          <div class="box">
+            <div class="icon">
+              <a href="https://www.instagram.com/travelquotations/"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="https://www.facebook.com/TravelQuotations"
+                ><i class="fa fa-facebook-official" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="mailto:travelblog@gmail.com"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Pošalji poruku:</h2>
+            <div class="inputBox">
+              <input
+                id="ime"
+                type="text"
+                name="ime"
+                value=""
+                required="required"
+              />
+              <span>Ime:</span>
+            </div>
+            <div class="inputBox">
+              <input
+                id="prezime"
+                type="text"
+                name="prezime"
+                value=""
+                required="required"
+              />
+              <span>Prezime:</span>
+            </div>
+            <div class="inputBox">
+              <textarea
+                id="destinacija"
+                name="poruka"
+                value=""
+                required="required"
+              ></textarea>
+              <span>Vaše omiljene destinacije...</span>
+            </div>
+            <div class="button">
+              <button onclick="UPIS()" name="button" type="reset">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Travel Blog</a>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">Destinations</button>
+          <div class="dropdown-content">
+            <br />
+            <a href="santorini.html">Santorini</a>
+            <br />
+            <a href="amsterdam.html">Amsterdam</a>
+            <br />
+            <a href="rovaniemi.html">Rovaniemi</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="box">
+        <input
+          id="searchbar"
+          onkeyup="search()"
+          type="text"
+          name="search"
+          placeholder="Search"
+        />
+
+        <ul id="list">
+          <br />
+          <li class="destination-list">
+            <a href="santorini.html">Santorini</a>
+          </li>
+
+          <br />
+          <li class="destination-list">
+            <a href="amsterdam.html">Amsterdam</a>
+          </li>
+          <br />
+          <li class="destination-list">
+            <a href="rovaniemi.html">Rovaniemi</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="about-content">
+      <p>
+        Cijeli život je putovanje kroz koje učimo. Naša putovanja su spoj
+        avanture, zabave, opuštanja i otkrivanja svega što svijet čini posebnim.
+        Drugi jezik, kultura, povijest, arhitektura,… sve su to obilježja nekog
+        područja koja možete doživjeti kroz naša jedinstvena putovanja. Pišući
+        zanimljive putopise trudimo se prenijeti doživljaje putovanja u slova
+        koja će vas ponukati da otkrijete sve ljepote destinacije koja vam je
+        zanimljiva.
+        <br />
+        "Svet je knjiga, a oni koji ne putuju, čitaju samo jednu stranicu." -
+        Sveti Avgustin
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
